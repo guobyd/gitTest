@@ -3,7 +3,7 @@
 git add .
 
 2.使用git commit命令，根据索引库的内容进行文件的提交
-git -m '提交的内容'
+git commit -m '提交的内容'
 
 3.推送到远程分支
 git push origin master:master
