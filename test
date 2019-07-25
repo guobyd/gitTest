@@ -1,1 +1,26 @@
+-- 推送本地到远程
+1.使用git add命令，将我们要提交的文件信息（包括有修改过和新建的文件）添加到索引库
+git add .
+
+2.使用git commit命令，根据索引库的内容进行文件的提交
+git -m '提交的内容'
+
+3.推送到远程分支
 git push origin master:master
+
+-- 从远程拉取到本地
+1.初始化
+git init 
+
+2.和远程分支建立连接
+a.git clone https://github.com/guobyd/gitTest.git
+b.git remote add origin https://github.com/guobyd/gitTest.git
+
+3.将远程代码拉取到本地(dev为远程分支名)
+git fetch origin dev
+
+4.在本地创建分支,并切换到该分支
+git checkout -b dev(本地分支名) origin/dev(远程分支名)
+
+5.把某个分支上的内容都拉取到本地
+git pull origin dev(远程分支名)
