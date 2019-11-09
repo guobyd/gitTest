@@ -9,3 +9,7 @@ git push origin dev:dev
 1111
 
 ---分支合并
+git add . test
+git checkout dev
+git commit -m '分支合并'
+git push origin dev:dev
